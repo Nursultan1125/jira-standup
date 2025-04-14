@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Standup CSV to Markdown",
+  "version": "1.0",
+  "description": "Convert standup into Markdown format with Jira integration",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://jira.clutch.co/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

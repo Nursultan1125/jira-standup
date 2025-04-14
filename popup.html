@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Standup to Markdown</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; width: 300px; }
+    textarea { width: 100%; height: 150px; }
+  </style>
+</head>
+<body>
+  <h2>JIRA standup</h2>
+  <div id="jira-standup-options">
+    <ul>
+    <li><a href="chrome-extension://obhbaedbmefhcdgaagljdefojdgcjhll/options.html" target="singleNewTab">Generate standup</a></li>
+    <li><a href="#" id="go-to-jira-dashboard" target="_blank">Go to JIRA Dashboard</a></li>
+  </ul>
+  </div>
+  <div id="jira-standup-url">
+    <h3>Jira url</h3>
+    <form id="set-jira-base-url" action="" method="post" enctype="multipart/form-data">
+      <input type="text" name="jira-base-url" id="jira-base-url-input" required />
+      <button type="submit">Set url</button>
+    </form>
+
+  </div>
+
+<script src="popup.js"></script>
+</body>
+</html>
